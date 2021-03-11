@@ -11,23 +11,23 @@ class Sidebar extends Component {
             navlinks: [
                 {
                     item: 'Home',
-                    path: process.env.PUBLIC_URL
+                    path: process.env.PUBLIC_URL + '/'
                 },
                 {
                     item: 'About',
-                    path: '/about'
+                    path: process.env.PUBLIC_URL + '/about'
                 },
                 {
                     item: 'Education',
-                    path: '/education'
+                    path: process.env.PUBLIC_URL + '/education'
                 },
                 {
                     item: 'Skills',
-                    path: '/skills'
+                    path: process.env.PUBLIC_URL + '/skills'
                 },
                 {
                     item: 'Contact',
-                    path: '/contact'
+                    path: process.env.PUBLIC_URL + '/contact'
                 }
             ]
         }
@@ -65,6 +65,18 @@ class Sidebar extends Component {
             }
         })
     }
+
+    // mobileMenuState = () => {
+    //     const nav = document.getElementById('nav');
+    //     console.log(nav.children[0].children);
+    //     console.log('hello')
+    //     // if (nav.classList.contains('show')) {
+    //     //     nav.classList.remove('show');
+    //     //     icon.classList.remove('fa-times');
+    //     //     icon.classList.add('fa-bars');
+    //     //     icon.style.color = '#000';
+    //     // }
+    // }
 
     render() {
         return (

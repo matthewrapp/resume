@@ -13,20 +13,20 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Sidebar />          
+          <Sidebar />           
           <Route exact path={process.env.PUBLIC_URL}>
             <Home />
           </Route>
-          <Route exact path="/about">
+          <Route exact path={process.env.PUBLIC_URL + '/about'}>
             <About />
           </Route>
-          <Route exact path="/education">
+          <Route exact path={process.env.PUBLIC_URL + '/education'}>
             <Education />
           </Route>
-          <Route exact path="/skills">
+          <Route exact path={process.env.PUBLIC_URL + '/skills'}>
             <Skills />
           </Route>
-          <Route exact path="/contact">
+          <Route exact path={process.env.PUBLIC_URL + '/contact'}>
             <Contact />
           </Route>
       </div>
